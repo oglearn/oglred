@@ -31,6 +31,7 @@ include_directories ("${PROJECT_SOURCE_DIR}/common")
  
 # add the executable
 add_executable(test "${PROJECT_SOURCE_DIR}/ch01/book/1.cpp" "${PROJECT_SOURCE_DIR}/common/shaderutils.cpp")
+add_executable(test1 "${PROJECT_SOURCE_DIR}/ch01/exp/1.cpp" "${PROJECT_SOURCE_DIR}/common/shaderutils.cpp")
 
 ########################################################
 # Linking & stuff
@@ -38,3 +39,4 @@ add_executable(test "${PROJECT_SOURCE_DIR}/ch01/book/1.cpp" "${PROJECT_SOURCE_DI
 
 # create the program "test"
 target_link_libraries(test ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+target_link_libraries(test1 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
